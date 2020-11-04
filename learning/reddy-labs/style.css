@@ -1,0 +1,255 @@
+body
+{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+h1
+{
+ font-family: 'Acme', sans-serif;
+ color: #f56a79;
+}
+h2
+{
+ font-family: 'Acme', sans-serif;
+ font-size: 55px;
+ color: #373a40;
+ margin: 0;
+}
+p
+{
+  font-family: 'Acme', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  line-height: 40px;
+}
+.fav
+{
+  font-size: 25px;
+  margin: auto;
+}
+.symba
+{
+  transition: 1s;
+  display: flex;
+}
+.symbal
+{
+  transition: 1s;
+  font-size: 13px;
+  margin: 5px 37px 0 0;
+}
+nav
+{ transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 14vh;
+  background-color: none;
+  position:fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: none;
+  color: white;
+}
+
+.anchors
+{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin-right: 50px;
+}
+a,.logo
+{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+
+}
+video
+{
+  display: block;
+}
+.video
+{
+  filter: brightness(75%);
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+.reddywrite
+{transition: 1s;
+  display: block;
+  height: 40px;
+ margin: 0 10px;
+}
+.reddylogo
+{
+  transition: 1s;
+  display: block;
+  margin: 7px auto;
+  height: 60px;
+}
+.imagext
+{transition: 1s;
+ display:inline-block;
+ height: 35px;
+}
+.nav-links
+{
+  display: flex;
+}
+.items
+{list-style: none;
+ padding:0 20px;
+ font-size: 15px;
+}
+.sym
+{
+  list-style: none;
+}
+.symbols
+{
+
+  line-height: 30px;
+}
+.navlinks
+{
+  position: relative;
+}
+.navlinkes
+{
+  font-size: 16px;
+}
+.navlinks::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background:#6603fc;
+  filter: brightness(150%);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.navlinks:hover::after{
+  transform:scaleX(1);
+  transform-origin: left;
+    height: 3px;
+}
+.pills
+{
+  width: 100%;
+  display: block;
+
+}
+.aboutus
+{
+  display: flex;
+  width: 100%;
+}
+.About
+{  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fcdada;
+  width: 100%;
+  height:inherit;
+}
+.aboutwrite
+{
+  padding: 100px;
+}
+.windows
+{
+  overflow:hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+.windows img
+{
+  position:relative;
+  left: 78px;
+  width: 150%;
+  z-index: -1;
+}
+.ourpartners
+{
+  border: none;
+  border-radius: 5px;
+  background-color: #f5b461;
+  font-size: 25px;
+  color: #363636;
+  width: 250px;
+  height:50px;
+font-family: 'Leckerli One', cursive;
+}
+.rect1
+{
+  width: 100%;
+  height: 1000px;
+}
+.backdrop-blur {
+  background-color: rgba(0, 0,0, .9);
+  min-height: 8vh;
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+  .backdrop-blur {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(1em);
+
+    backdrop-filter: blur(1em);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width: 8px;
+
+  background:rgba(0,0,0,1);
+
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow:inset 0 0 6px rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px; -webkit-box-shadow:outset 0 0 6px 20px rgba(0,0,0,0.3);
+  background: #d6e0f0;
+}
